@@ -1,0 +1,56 @@
+{
+  "categories": {
+    "introduction": {
+      "description": "Basic profile and communication",
+      "questions": [
+        "Tell me something about yourself in brief.",
+        "Describe your background and key experiences so far."
+      ]
+    },
+    "motivation_fit": {
+      "description": "Motivation and company/role fit",
+      "questions": [
+        "Why should we hire you?",
+        "Why do you want to work for our company?",
+        "Why do you want this job?"
+      ]
+    },
+    "strengths_weaknesses": {
+      "description": "Self awareness and personality",
+      "questions": [
+        "What are your strengths and weaknesses?",
+        "What did you do in the last year to improve your knowledge?",
+        "What is the difference between hard work and smart work?"
+      ]
+    },
+    "behavioural": {
+      "description": "Behavioural and situation based",
+      "questions": [
+        "Give an example of a time you had to respond to an unhappy manager or customer.",
+        "How do you work under pressure?",
+        "How do you deal with feedback and criticism?"
+      ]
+    },
+    "future_goals": {
+      "description": "Career goals and planning",
+      "questions": [
+        "Where do you see yourself in the next 3 years?",
+        "What are your long-term career goals?"
+      ]
+    },
+    "salary_availability": {
+      "description": "Salary, relocation and availability",
+      "questions": [
+        "What are your salary expectations?",
+        "Are you willing to relocate or travel?",
+        "How do you feel about working weekends or night shifts?"
+      ]
+    },
+    "final": {
+      "description": "Closing questions",
+      "questions": [
+        "Do you have any questions for me?"
+      ]
+    }
+  }
+}

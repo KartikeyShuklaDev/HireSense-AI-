@@ -1,0 +1,47 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+.buildlog/
+.flutter-plugins
+.flutter-plugins-deps
+.flutter-include
+.flutter-versions
+.idea/
+pubspec.lock
+
+# Build outputs
+build/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Python venvs
+backend/.venv/
+backend/venv/
+C:\hrvenv\
+
+# Python cache
+**/__pycache__/
+**/*.py[cod]
+
+# Environment files
+**/.env
+
+# OS generated files
+*.log
+
+# JetBrains
+*.iml
+
+# Node
+node_modules/
+
+# Other
+*.sqlite3
