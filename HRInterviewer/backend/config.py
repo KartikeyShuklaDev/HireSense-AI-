@@ -4,7 +4,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 
 # API key is taken from environment by google-genai, but we keep this for reference
-GEMINI_API_KEY = os.getenv("AIzaSyAjXIAr-Agp-MRGxDtQlPGMSPCvJ9v-Al0")
+GEMINI_API_KEY = os.getenv("")
 
 BOOKS_DIR = BASE_DIR / "data" / "books"
 VECTOR_DB_DIR = BASE_DIR / "vector_db"
