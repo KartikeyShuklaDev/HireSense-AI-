@@ -154,24 +154,64 @@ Flutter handles only presentation; all AI logic runs on the backend.
 ```text
 integration-with-flutter/
 │
-├── frontend_app/                  # Flutter Frontend (Web / Mobile)
+├── frontend_app/                         # Flutter Frontend (Web / Mobile)
 │   ├── lib/
-│   │   ├── screens/               # UI Screens
-│   │   ├── services/              # API Communication
-│   │   ├── widgets/               # Reusable UI Components
-│   │   └── main.dart
+│   │   ├── screens/                      # UI Screens
+│   │   │   ├── home_screen.dart
+│   │   │   ├── interview_screen.dart
+│   │   │   ├── status_screen.dart
+│   │   │   └── history_screen.dart
+│   │   │
+│   │   ├── services/                     # API Communication Layer
+│   │   │   ├── api_client.dart
+│   │   │   └── interview_service.dart
+│   │   │
+│   │   ├── widgets/                      # Reusable UI Components
+│   │   │   ├── animated_wave.dart
+│   │   │   ├── start_button.dart
+│   │   │   ├── loading_indicator.dart
+│   │   │   └── status_card.dart
+│   │   │
+│   │   ├── utils/                        # Helper Functions
+│   │   ├── constants/                    # App Constants
+│   │   └── main.dart                     # Flutter Entry Point
 │   │
-│   └── pubspec.yaml
+│   ├── android/                          # Android Platform Files
+│   ├── ios/                              # iOS Platform Files
+│   ├── web/                              # Web Build
+│   ├── windows/ linux/ macos/            # Desktop Platforms
+│   ├── pubspec.yaml                      # Flutter Dependencies
+│   └── README.md
 │
-├── HRInterviewer/
+├── HRInterviewer/                        # AI Interview Backend
 │   └── backend/
-│       ├── app.py                 # Flask App Entry
-│       ├── routes/                # REST APIs
-│       ├── services/              # RAG, LLM, Speech, Evaluation
-│       ├── vector_db/              # FAISS Index
-│       ├── data/                   # Textbooks & Audio
-│       └── requirements.txt
+│       ├── app.py                        # Flask Application Entry
+│       ├── config.py                     # Environment & Config
+│       │
+│       ├── routes/                       # API Routes
+│       │   ├── interview.py
+│       │   └── speech.py
+│       │
+│       ├── services/                     # Core AI Logic
+│       │   ├── interview_service.py
+│       │   ├── rag_service.py
+│       │   ├── rag_metrics.py
+│       │   ├── speech_service.py
+│       │   ├── elevenlabs_service.py
+│       │   └── gemini_service.py
+│       │
+│       ├── vector_db/                    # FAISS Vector Database
+│       │
+│       ├── data/
+│       │   ├── books/                    # Textbooks / PDFs (RAG)
+│       │   ├── audio/                    # Temporary Audio Files
+│       │   └── hr_questions.json
+│       │
+│       ├── utils/                        # Audio & Helper Utilities
+│       ├── requirements.txt              # Python Dependencies
+│       └── start_backend.bat
 │
 ├── .gitignore
 ├── LICENSE
 └── README.md
+
