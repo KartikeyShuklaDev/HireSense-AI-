@@ -1,5 +1,4 @@
 
-# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyAjXIAr-Agp-MRCvJ9v-Al0")
 import sys
 import io
 import wave
@@ -34,8 +33,8 @@ from services.elevenlabs_service import eleven_tts, eleven_stt
 # ========================= API KEYS & CLIENTS =========================
 
 # 🔥 Put your real keys here or via env
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyCw_RTfu_Iad5E1Gr7FGEPKpLZTPTT_r5w")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "REMOVED_GROQ_KEY9kqCVUlFqHsQH4UXZmkiWGdyb3FY0gByiiLttnGACrAxEXxkoKu6")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 
 client_gemini = genai.Client(api_key=GEMINI_API_KEY)
 client_groq = Groq(api_key=GROQ_API_KEY)
